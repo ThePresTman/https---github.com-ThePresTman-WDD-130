@@ -1,0 +1,52 @@
+body{
+    background-color: lightskyblue;
+    margin: 0px 500px 0px 500px;
+}
+
+h1{
+    font-size: 65px;
+    text-align: center;
+    color: white;
+}
+h1:hover{
+    color: black;
+}
+
+.first_quote{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+.quote_author{
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+
+ol{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+img{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+.second_quote{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.reference{
+    font-size: 13px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
