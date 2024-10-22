@@ -6,7 +6,7 @@
     margin-top: 5%;
     margin-left: 35%;
     z-index: 1;
-    letter-spacing: 7px;
+    letter-spacing: 30%;
     position: absolute;
 }
 
@@ -15,7 +15,7 @@
     text-align: center;
     transform: translate(25%, -25%);
     margin-top: 6.5%;
-    letter-spacing: 7px;
+    letter-spacing: 30%;
     position: absolute;
 }
 
@@ -23,9 +23,9 @@ h3{
     font-size: 60px;
     color: rgb(134, 40, 40);
     float: right;
-    margin-right: 50%;
+    margin-right: 60%;
     margin-top: 30%;
-    letter-spacing: 7px;
+    letter-spacing: 30%;
 }
 
 img{
