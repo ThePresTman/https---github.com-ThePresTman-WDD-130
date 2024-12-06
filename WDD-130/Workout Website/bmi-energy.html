@@ -50,9 +50,13 @@
             <option value="female">Female</option>
           </select>
           <button onclick="calculateBMI()">Calculate BMI</button>
-          <p id="bmi-result"></p>
+
+          <!-- BMI Result Box -->
+          <div id="bmi-result-box" class="result-box" style="display: none;">
+            <p id="bmi-result">Your BMI will appear here.</p>
+          </div>
         </div>
-    
+
         <!-- Energy Calculator -->
         <div class="calculator">
           <h3>Energy Calculator</h3>
@@ -77,7 +81,11 @@
             <option value="1.725">Very Active</option>
           </select>
           <button onclick="calculateEnergy()">Calculate Daily Calorie Needs</button>
-          <p id="energy-result"></p>
+
+          <!-- Energy Result Box -->
+          <div id="energy-result-box" class="result-box" style="display: none;">
+            <p id="energy-result">Your Daily Calorie Needs will appear here.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -96,9 +104,8 @@
             <img src="Images/instagram.png" alt="Instagram Icon">
         </a>
     </div>
-</footer>
+  </footer>
 
-  <!-- Link to your JavaScript file -->
   <script src="scripts/calculators.js"></script>
 </body>
 

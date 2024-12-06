@@ -10,7 +10,7 @@ function calculateBMI() {
     return;
   }
 
-  // Convert height to inches and then to meters
+  // Convert height to inches
   const totalInches = feet * 12 + inches;
   const heightMeters = totalInches * 0.0254;
 
@@ -34,7 +34,9 @@ function calculateBMI() {
     else bmiCategory = "Obese";
   }
 
+  // Show BMI result in the box
   document.getElementById("bmi-result").textContent = `Your BMI is ${bmi.toFixed(2)} (${bmiCategory}).`;
+  document.getElementById("bmi-result-box").style.display = "block"; // Show result box
 }
 
 // Function to calculate daily energy needs
@@ -69,5 +71,7 @@ function calculateEnergy() {
   // Calculate daily calorie needs
   const dailyCalories = bmr * activityLevel;
 
-  document.getElementById("energy-result").textContent = `Your daily calorie needs are approximately ${dailyCalories.toFixed(2)} calories.`;
+  // Show energy result in the box
+  document.getElementById("energy-result").textContent = `Your daily calorie needs are approximately ${dailyCalories.toFixed(0)} calories.`;
+  document.getElementById("energy-result-box").style.display = "block"; // Show result box
 }
