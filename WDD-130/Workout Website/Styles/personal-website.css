@@ -45,7 +45,7 @@ header {
   color: var(--accent2-color); /* Off-white */
   padding: 1.5rem;
   text-align: center;
-  width: 100%;
+  width: 96.8%;
 }
 
 header h1 {
@@ -172,10 +172,44 @@ footer {
   margin: 0;
 }
 
+/* Olympic Container */
+.olympic-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+/* Olympic Image */
+.olympic-img {
+  width: 100%;
+  border-radius: 15px;
+  filter: brightness(0.5);
+  position: relative;
+  z-index: 1;
+}
+
+/* Overlay Text */
+.overlay-olympic {
+  position: absolute; /* Places the text on top of the image */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--accent2-color);
+  font-size: 2.5rem;
+  text-shadow: 2px 2px var(--accent1-color); /* Adds a dark shadow for readability */
+  z-index: 2;
+  margin: 0;
+}
+
+
 .purpose-h {
-  font-size: 2.5rem; /* Adjust size as needed */
-  font-weight: bold; /* Optional: make it bolder */
-  color: black; /* Optional: apply your color scheme */
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
 }
 
 .purpose-p {
