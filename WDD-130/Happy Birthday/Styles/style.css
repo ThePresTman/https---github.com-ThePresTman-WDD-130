@@ -237,3 +237,31 @@ body {
         transform: translateX(-5px);
     }
 }
+
+/* Happy Birthday Text */
+.happy-birthday-container {
+    position: absolute;
+    top: 40%; /* Adjust the vertical position */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 70px; /* Large text */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    color: #FAA916; /* Yellow-orange color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a slight shadow */
+    z-index: 12;
+    padding: 0 10%;
+}
+
+.happy {
+    position: relative;
+    left: 150px;
+}
+
+.birthday {
+    position: relative;
+    right: 60px;
+}
