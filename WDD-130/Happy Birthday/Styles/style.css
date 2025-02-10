@@ -1,0 +1,218 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ADD8E6; /* Light blue background */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Ground */
+.ground {
+    position: absolute;
+    bottom: 15px; /* Ground closer to the video */
+    width: 100%;
+    height: 60px;
+    background-color: #8B4513; /* Brown ground */
+    z-index: 1;
+}
+
+/* Flower Styles */
+.flowers-left, .flowers-right {
+    position: absolute;
+    bottom: 60px; /* Flowers on the ground */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    z-index: 2;
+}
+
+.flower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.petal {
+    width: 30px; /* Larger petals */
+    height: 50px;
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.petal-1 {
+    transform: rotate(45deg);
+}
+
+.petal-2 {
+    transform: rotate(-45deg);
+}
+
+.petal-3 {
+    transform: rotate(135deg);
+}
+
+.petal-4 {
+    transform: rotate(-135deg);
+}
+
+.stem {
+    width: 10px; /* Larger stems */
+    height: 70px;
+    background-color: #006400; /* Dark green stem */
+    margin-top: 10px;
+}
+
+/* Video and Bee Styles */
+.video-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bee {
+    position: absolute;
+    bottom: 380px; /* Move bees even higher above the video */
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 20; /* Ensure bees appear above the video */
+}
+
+.left-bee {
+    left: 20px; /* Closer left bee */
+}
+
+.middle-bee {
+    left: 50%;
+    transform: translateX(-50%); /* Center bee */
+}
+
+.right-bee {
+    right: -50px; /* Closer right bee */
+}
+
+.bee-body {
+    width: 60px;
+    height: 30px;
+    background-color: yellow; /* Bee's main body color */
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    background: linear-gradient(to bottom, #f7c31b 0%, #f5a01a 100%); /* Yellow body with gradient */
+    border: 2px solid #b2710b; /* Slight border to make the body more defined */
+}
+
+.bee-stripe {
+    width: 100%;
+    height: 6px; /* Adjusted width for stripes */
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bee-stripe.top {
+    top: 0;
+}
+
+.bee-stripe.middle {
+    top: 10px;
+}
+
+.bee-stripe.bottom {
+    top: 20px;
+}
+
+.bee-wing {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.5); /* Light, translucent wings */
+    border-radius: 50%;
+    z-index: 3;
+    opacity: 0.8;
+    animation: wing-flap 0.5s ease-in-out infinite alternate;
+}
+
+.bee-wing.left {
+    transform: rotate(-30deg);
+    left: -25px;
+}
+
+.bee-wing.right {
+    transform: rotate(30deg);
+    right: -25px;
+}
+
+/* Bee legs */
+.bee-leg {
+    width: 6px;
+    height: 20px;
+    background-color: #8B4513; /* Brown legs */
+    position: absolute;
+    bottom: -10px;
+}
+
+.bee-leg.left-leg {
+    left: 5px;
+}
+
+.bee-leg.right-leg {
+    right: 5px;
+}
+
+/* Bee Antennae */
+.bee-antenna {
+    position: absolute;
+    width: 4px;
+    height: 15px;
+    background-color: black;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+.bee-antenna-left {
+    transform: rotate(-30deg);
+    left: -6px;
+}
+
+.bee-antenna-right {
+    transform: rotate(30deg);
+    right: -6px;
+}
+
+/* Animation for bee wings flapping */
+@keyframes wing-flap {
+    0% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+/* Video Styles */
+#video-message {
+    z-index: 5;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    background: none; /* Removed background color */
+}

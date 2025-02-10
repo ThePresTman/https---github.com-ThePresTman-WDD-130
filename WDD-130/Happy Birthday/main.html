@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Surprise</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side Flowers -->
+        <div class="flowers-left">
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+        </div>
+        
+        <!-- Video and Bees -->
+        <div class="video-container">
+            <!-- Left Bee -->
+            <div class="bee left-bee">
+                <div class="bee-body">
+                    <div class="bee-stripe top"></div>
+                    <div class="bee-stripe middle"></div>
+                    <div class="bee-stripe bottom"></div>
+                </div>
+                <div class="bee-wing left"></div>
+                <div class="bee-wing right"></div>
+            </div>
+
+            <!-- Middle Bee (Main holding the video) -->
+            <div class="bee middle-bee">
+                <div class="bee-body">
+                    <div class="bee-stripe top"></div>
+                    <div class="bee-stripe middle"></div>
+                    <div class="bee-stripe bottom"></div>
+                </div>
+                <div class="bee-wing left"></div>
+                <div class="bee-wing right"></div>
+            </div>
+
+            <!-- Right Bee -->
+            <div class="bee right-bee">
+                <div class="bee-body">
+                    <div class="bee-stripe top"></div>
+                    <div class="bee-stripe middle"></div>
+                    <div class="bee-stripe bottom"></div>
+                </div>
+                <div class="bee-wing left"></div>
+                <div class="bee-wing right"></div>
+            </div>
+
+            <!-- Video -->
+            <video id="video-message" width="600" height="400" controls>
+                <source src="Content/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Right Side Flowers -->
+        <div class="flowers-right">
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+            <div class="flower"><div class="petal petal-1"></div><div class="petal petal-2"></div><div class="petal petal-3"></div><div class="petal petal-4"></div><div class="stem"></div></div>
+        </div>
+
+        <!-- Ground -->
+        <div class="ground"></div>
+    </div>
+
+    <script>
+        // Play video when clicked
+        const video = document.getElementById('video-message');
+        video.addEventListener('click', function () {
+            video.play();
+        });
+    </script>
+</body>
+</html>
